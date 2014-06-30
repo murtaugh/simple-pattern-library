@@ -1,0 +1,173 @@
+body {
+	padding: 2em 1em 50em calc(20% + 1em);
+	background: #aaa; 
+	font-family: helvetica; 
+	font-size: 16px;
+	color: #000;
+}
+
+header.prime {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 20%;
+	height: 100%;
+	background: #666;
+	font-weight: 600;
+	overflow: auto;
+}
+
+h1.prime {
+	padding: 1em 1em;
+	background: #333;
+	color: #fff;
+	font-weight: 600;
+}
+
+nav.prime ol {
+	list-style-type: none;
+	transform: translateX(-100%);
+	transition: transform 400ms ease-out;
+}
+
+body.activated nav.prime ol {
+	margin: 0;
+	transform: translateX(0);
+}
+
+nav.prime ol li {
+	font-size: 14px;
+	border-bottom: 1px solid #555;
+}
+
+nav.prime ol li a {
+	display: block;
+	padding: .5em 1em;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav.prime ol li.sub a {
+	color: #ccc;
+}
+
+nav.prime ol li.sub a:before {
+	content: '· ';
+}
+
+nav.prime ol li.active,
+nav.prime ol li:hover {
+	background: #999;
+}
+
+nav.prime ol li.active a,
+nav.prime ol li:hover a {
+	color: #fff;
+}
+
+article {
+	margin-bottom: 1.5em;
+}
+
+article section {
+	padding: 1em;
+}
+
+article > h1 {
+	margin-bottom: .5em;
+	font-size: 2em;
+	padding: 0 .5em;
+	color: #444;
+}
+
+article > section > h2 {
+	padding-bottom: .25em;
+	font-size: 1.25em;
+	color: #444;
+}
+
+article > h1 + small,
+article > section > h2 + small {
+	display: block;
+	padding: 0 0 .75em;
+	color: #666;
+}
+
+div.sample {
+	background: #666;
+	padding: 2em 0;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	text-align: center;
+}
+
+pre.sample {
+	margin-top: -.2em;
+	resize: none;
+	display: block;
+	width: 100%;
+	padding: 1em;
+	font-family: monospace;
+	background: transparent;
+	border: 0;
+	background: #ccc;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+pre.sample:focus {
+	background: #fff;
+}
+
+pre.sample span.comment {
+	color: #499152;
+	font-style: italic;
+}
+
+.example-box {
+	width: 100%;
+	min-height: 140px;
+}
+
+.example-box:not(:last-of-type) {
+	margin-bottom: 2em;
+}
+
+aside.note {
+	margin: 1.50em;
+	padding: .25em 1.25em;
+	color: #666;
+	font-size: .85em;
+	border-left: 1px solid #666;
+}
+
+aside.note:before {
+	content: 'Note: ';
+	font-weight: bold;
+}
+
+footer.prime {
+	color: #666;
+	text-align: center;
+}
+
+[data-demoable] {cursor: pointer;}
+
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+	
+		
+}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+@media print {
+
+
+
+}

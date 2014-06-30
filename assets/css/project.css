@@ -1,0 +1,84 @@
+h1.main-title {
+	font-size: 2em;
+}
+
+h2 {
+	margin-bottom: .5em;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+h3 {
+	margin-bottom: .5em;
+	font-size: 1.50em;
+	font-weight: bold;
+}
+
+h4 {
+	margin-bottom: .5em;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h5 {
+	margin-bottom: .5em;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h6 {
+	margin-bottom: .5em;
+	font-size: 1em;
+	font-style: italic;
+}
+
+ul,
+ol {
+	margin: 0 0 0 2em;
+	padding: 0;
+	list-style-type: disc;
+	text-align: left;
+}
+
+.notched-box {
+  position: relative;
+  width: 50%;
+  height: 200px;
+  margin: 2em auto;
+  padding: 2em 0;
+  background: #eee;
+  overflow: hidden;
+}
+
+.notched-box:before,
+.notched-box:after {
+	content:'';
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	height: 0;
+	width: 50%;
+	border-bottom: 1.5em solid #666;
+	box-sizing: border-box;
+}
+
+.notched-box:before {
+	left: 0;
+	border-right: 2em solid transparent;
+}
+
+.notched-box:after {
+	right:0;
+	border-left: 2em solid transparent;
+}
+
+.notched-box p {
+  margin: 0 2em 1em;
+  text-align: left;
+}
+
+.notched-box p.lipsum:empty:after {
+  content: 'More text so you can see the notch is transparent. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar neque. Nunc blandit mi vel enim tristique adipiscing. Duis gravida justo nec iaculis laoreet. Nullam magna enim, semper eget massa elementum, elementum mattis quam. Curabitur eget venenatis nibh, a hendrerit ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar neque. Nunc blandit mi vel enim tristique adipiscing. Duis gravida justo nec iaculis laoreet. Nullam magna enim, semper eget massa elementum, elementum mattis quam. Curabitur eget venenatis nibh, a hendrerit ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar neque. Nunc blandit mi vel enim tristique adipiscing. Duis gravida justo nec iaculis laoreet. Nullam magna enim, semper eget massa elementum, elementum mattis quam. Curabitur eget venenatis nibh, a hendrerit ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis pulvinar neque. Nunc blandit mi vel enim tristique adipiscing. Duis gravida justo nec iaculis laoreet. Nullam magna enim, semper eget massa elementum, elementum mattis quam. Curabitur eget venenatis nibh, a hendrerit ligula.';
+  color: #ccc;
+}
