@@ -18,3 +18,4 @@ I've been using this not just to house already-built components, but as a develo
 1. It's fluid, but not responsive yet.
 2. The nav, when overflowing, does not auto-scroll to the selected item.
 3. Item titles aren't links yet, allowing for quick discovery of anchors.
+4. My use of `history.pushState` really clogs up the browser history when scrolling; should probably find a better solution.
