@@ -5,14 +5,16 @@ Pattern and snippet libraries are becoming a valuable part of the front-end deve
 
 Hence: A Simple Pattern Library.
 
+I've been using this not just to house already-built components, but as a development tool.
+
 ## Some Cool Stuff
 
 1. Fully front end. (Pre-processor and server-side laguage free.)
-2. jQuery is used to enhance the page (auto-generating the nav and code snippets), but the page works jsut fine without JS.
+2. jQuery is used to enhance the page (auto-generating the nav and code snippets, alowing you to author just once), but the page works just fine without JS.
 3. Smooth-scrolling anchor links; auto-highlighting nav elements.
 
 ## Some Shortcomings
 
 1. It's fluid, but not responsive yet.
 2. The nav, when overflowing, does not auto-scroll to the selected item.
-3. item titles aren't links yet (so you don't have to hunt in the nav for a link)
+3. Item titles aren't links yet, allowing for quick discovery of anchors.
