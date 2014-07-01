@@ -67,9 +67,13 @@
 				//but ends in visible area
 				//+ 10 allows you to change hash before it hits the top border
 			) {
-				history.pushState(null, null, '#' + $(this).attr('id'));
-				$('nav.prime li').removeClass('active');
-				$('nav.prime li[data-nav-link="link-' + $(this).attr('id') + '"]').addClass('active');
+				if (window.location.hash != '#' + $(this).attr('id')) {
+				
+					history.pushState(null, null, '#' + $(this).attr('id'));
+					$('nav.prime li').removeClass('active');
+					$('nav.prime li[data-nav-link="link-' + $(this).attr('id') + '"]').addClass('active');
+				
+				}
 			}
 			
 		});
