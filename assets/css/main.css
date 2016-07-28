@@ -1,15 +1,15 @@
 body {
 	padding: 2em 1em 50em calc(20% + 1em);
-	background: #aaa; 
-	font-family: helvetica; 
+	background: #aaa;
+	font-family: helvetica;
 	font-size: 16px;
 	color: #000;
 }
 
 header.prime {
-	position: fixed; 
-	top: 0; 
-	left: 0; 
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 20%;
 	height: 100%;
 	background: #666;
@@ -154,20 +154,10 @@ footer.prime {
 [data-demoable] {cursor: pointer;}
 
 
-/* Media queries
--------------------------------------------------------------------------------*/
+@media screen and (max-width: 680px) {
 
-@media screen and (max-width: 480px) {
-	
-		
-}
-
-
-
-/* Print styles
--------------------------------------------------------------------------------*/
-@media print {
-
-
+	nav.prime {
+		display: none;
+	}
 
 }
